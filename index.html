@@ -1,0 +1,412 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Performance IDM - Fluxos de Vendas para Arquitetos</title>
+    <script src="https://cdn.tailwindcss.com "></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css ">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat :wght@400;500;600;700&family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Montserrat', sans-serif;
+            scroll-behavior: smooth;
+        }
+        h1, h2, h3, h4 {
+            font-family: 'Playfair Display', serif;
+        }
+        .hero-bg {
+            background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('https://images.unsplash.com/photo-1487958449943-2429e8be8625?ixlib=rb-4.0.3&auto=format&fit=crop&w=2070&q=80 ');
+            background-size: cover;
+            background-position: center;
+        }
+        .section-divider {
+            height: 100px;
+            background: linear-gradient(to bottom right, transparent 49.5%, white 50%);
+        }
+        .copper-text {
+            color: #b87333;
+        }
+        .copper-bg {
+            background-color: #b87333;
+        }
+        .hover-copper:hover {
+            background-color: #d4873e;
+        }
+        .feature-card {
+            transition: all 0.3s ease;
+        }
+        .feature-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+        }
+        .floating {
+            animation: floating 3s ease-in-out infinite;
+        }
+        @keyframes floating {
+            0% { transform: translateY(0px); }
+            50% { transform: translateY(-10px); }
+            100% { transform: translateY(0px); }
+        }
+    </style>
+</head>
+<body class="bg-white text-gray-800">
+    <!-- Navigation -->
+    <nav class="bg-white shadow-md fixed w-full z-10">
+        <div class="container mx-auto px-6 py-3">
+            <div class="flex justify-between items-center">
+                <div class="flex items-center">
+                    <div class="text-2xl font-bold copper-text">PERFORMANCE IDM</div>
+                </div>
+                <div class="hidden md:flex items-center space-x-8">
+                    <a href="#problema" class="text-gray-700 hover:text-copper-500">O Problema</a>
+                    <a href="#solucao" class="text-gray-700 hover:text-copper-500">Nossa Solução</a>
+                    <a href="#metodo" class="text-gray-700 hover:text-copper-500">Nosso Método</a>
+                    <a href="#investimento" class="text-gray-700 hover:text-copper-500">Investimento</a>
+                    <a href="#cta" class="px-4 py-2 bg-copper-500 text-white rounded-md hover:bg-copper-600 transition">Quero escalar meu escritório</a>
+                </div>
+                <div class="md:hidden">
+                    <button class="mobile-menu-button">
+                        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
+                        </svg>
+                    </button>
+                </div>
+            </div>
+        </div>
+        <!-- Mobile menu -->
+        <div class="mobile-menu hidden md:hidden bg-white py-4 px-6 shadow-lg">
+            <a href="#problema" class="block py-2 text-gray-700 hover:text-copper-500">O Problema</a>
+            <a href="#solucao" class="block py-2 text-gray-700 hover:text-copper-500">Nossa Solução</a>
+            <a href="#metodo" class="block py-2 text-gray-700 hover:text-copper-500">Nosso Método</a>
+            <a href="#investimento" class="block py-2 text-gray-700 hover:text-copper-500">Investimento</a>
+            <a href="https://wa.me/5521987829238?text=Quero%20escalar%20meu%20escrit ório%20de%20arquitetura" target="_blank" rel="noopener noreferrer" class="...">
+    Quero escalar meu escritório
+</a>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero-bg text-white pt-32 pb-20 md:pt-40 md:pb-32">
+        <div class="container mx-auto px-6">
+            <div class="flex flex-col md:flex-row items-center">
+                <div class="md:w-1/2 mb-12 md:mb-0">
+                    <h1 class="text-4xl md:text-5xl lg:text-6xl font-bold leading-tight mb-6">
+                        Arquitetos que crescem têm processo. <span class="copper-text">O resto depende da sorte.</span>
+                    </h1>
+                    <p class="text-xl md:text-2xl mb-8">
+                        Implementamos um fluxo completo de vendas online para arquitetos que querem atrair mais clientes e escalar seu faturamento.
+                    </p>
+                    <a href="https://wa.me/5521987829238?text=Quero%20escalar%20meu%20escrit ório%20de%20arquitetura" class="inline-block px-8 py-4 bg-green-500 text-white text-lg font-semibold rounded-md hover:bg-green-600 transition duration-300 transform hover:scale-105 shadow-md">
+    Quero escalar meu escritório
+</a>
+                </div>
+                <div class="md:w-1/2 flex justify-center">
+                    <div class="relative w-full max-w-md">
+                        <div class="absolute -top-10 -left-10 w-32 h-32 bg-copper-500 rounded-full opacity-20"></div>
+                        <div class="absolute -bottom-10 -right-10 w-32 h-32 bg-copper-500 rounded-full opacity-20"></div>
+                        <img src="https://images.unsplash.com/photo-1586023492125-27b2c045efd7?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1016&q=80 " alt="Arquiteto trabalhando" class="relative z-10 rounded-lg shadow-2xl floating">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- O Problema -->
+    <section id="problema" class="py-12 bg-gray-50">
+        <div class="container mx-auto px-6">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl md:text-4xl font-bold mb-4">O que a maioria das agências entrega?</h2>
+                <p class="text-xl text-gray-600 max-w-3xl mx-auto">Serviços superficiais que não geram resultados reais para seu escritório</p>
+            </div>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+                <div class="bg-white p-8 rounded-lg shadow-md feature-card">
+                    <div class="w-16 h-16 bg-copper-500 rounded-full flex items-center justify-center mb-6 mx-auto">
+                        <i class="fas fa-camera text-white text-2xl"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-3 text-center">Postagens nas redes sociais</h3>
+                    <p class="text-gray-600 text-center">Conteúdo genérico que não converte em clientes nem mostra sua autoridade no mercado.</p>
+                </div>
+                <div class="bg-white p-8 rounded-lg shadow-md feature-card">
+                    <div class="w-16 h-16 bg-copper-500 rounded-full flex items-center justify-center mb-6 mx-auto">
+                        <i class="fas fa-chart-line text-white text-2xl"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-3 text-center">Métricas de vaidade</h3>
+                    <p class="text-gray-600 text-center">Curtidas e seguidores que não se traduzem em faturamento para seu escritório.</p>
+                </div>
+                <div class="bg-white p-8 rounded-lg shadow-md feature-card">
+                    <div class="w-16 h-16 bg-copper-500 rounded-full flex items-center justify-center mb-6 mx-auto">
+                        <i class="fas fa-search-dollar text-white text-2xl"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-3 text-center">Zero acompanhamento</h3>
+                    <p class="text-gray-600 text-center">Nenhum controle sobre o que realmente importa: vendas e retorno sobre investimento.</p>
+                </div>
+                <div class="bg-white p-8 rounded-lg shadow-md feature-card">
+                    <div class="w-16 h-16 bg-copper-500 rounded-full flex items-center justify-center mb-6 mx-auto">
+                        <i class="fas fa-route text-white text-2xl"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-3 text-center">Nenhum plano de crescimento</h3>
+                    <p class="text-gray-600 text-center">Falta de estratégia clara para escalar seu faturamento de forma consistente.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Nossa Solução -->
+    <section id="solucao" class="py-12 bg-white">
+        <div class="container mx-auto px-6">
+            <div class="flex flex-col md:flex-row items-center">
+                <div class="md:w-1/2 mb-12 md:mb-0">
+                    <img src="https://images.unsplash.com/photo-1600585154340-be6161a56a0c?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80 " alt="Escritório de arquitetura" class="rounded-lg shadow-xl">
+                </div>
+                <div class="md:w-1/2 md:pl-12">
+                    <h2 class="text-3xl md:text-4xl font-bold mb-8">O que fazemos diferente:</h2>
+                    <div class="space-y-8">
+                        <div class="flex items-start">
+                            <div class="flex-shrink-0">
+                                <div class="flex items-center justify-center h-12 w-12 rounded-md bg-copper-500 text-white">
+                                    <i class="fas fa-megaphone"></i>
+                                </div>
+                            </div>
+                            <div class="ml-4">
+                                <h3 class="text-xl font-bold mb-2">Anúncios de alta conversão</h3>
+                                <p class="text-gray-600">Criamos campanhas que atraem os clientes certos para seu escritório, não apenas visualizações.</p>
+                            </div>
+                        </div>
+                        <div class="flex items-start">
+                            <div class="flex-shrink-0">
+                                <div class="flex items-center justify-center h-12 w-12 rounded-md bg-copper-500 text-white">
+                                    <i class="fas fa-rocket"></i>
+                                </div>
+                            </div>
+                            <div class="ml-4">
+                                <h3 class="text-xl font-bold mb-2">Otimização do funil completo</h3>
+                                <p class="text-gray-600">Trabalhamos desde a atração até o fechamento, garantindo que nenhuma oportunidade seja perdida.</p>
+                            </div>
+                        </div>
+                        <div class="flex items-start">
+                            <div class="flex-shrink-0">
+                                <div class="flex items-center justify-center h-12 w-12 rounded-md bg-copper-500 text-white">
+                                    <i class="fas fa-user-tie"></i>
+                                </div>
+                            </div>
+                            <div class="ml-4">
+                                <h3 class="text-xl font-bold mb-2">Abordagem comercial personalizada</h3>
+                                <p class="text-gray-600">Desenvolvemos junto com sua equipe a melhor forma de apresentar seus serviços e converter clientes.</p>
+                            </div>
+                        </div>
+                        <div class="flex items-start">
+                            <div class="flex-shrink-0">
+                                <div class="flex items-center justify-center h-12 w-12 rounded-md bg-copper-500 text-white">
+                                    <i class="fas fa-recycle"></i>
+                                </div>
+                            </div>
+                            <div class="ml-4">
+                                <h3 class="text-xl font-bold mb-2">Vendas recorrentes</h3>
+                                <p class="text-gray-600">Criamos estratégias para vender mais vezes para quem já comprou, aumentando seu faturamento sem aumentar custos.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Nosso Método -->
+    <section id="metodo" class="py-12 bg-gray-50">
+        <div class="container mx-auto px-6">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl md:text-4xl font-bold mb-4">Nosso método validado para destravar o crescimento do seu escritório</h2>
+                <p class="text-xl text-gray-600 max-w-3xl mx-auto">Um processo claro e objetivo para escalar seu faturamento</p>
+            </div>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+                <div class="bg-white p-8 rounded-lg shadow-md feature-card text-center">
+                    <div class="text-5xl font-bold copper-text mb-4">🔍</div>
+                    <h3 class="text-xl font-bold mb-3">Exploração</h3>
+                    <p class="text-gray-600">Testes rápidos para encontrar os anúncios que mais convertem para seu público específico.</p>
+                </div>
+                <div class="bg-white p-8 rounded-lg shadow-md feature-card text-center">
+                    <div class="text-5xl font-bold copper-text mb-4">💎</div>
+                    <h3 class="text-xl font-bold mb-3">Lapidação</h3>
+                    <p class="text-gray-600">Melhoramos o anúncio campeão para gerar mais vendas com o mesmo valor investido.</p>
+                </div>
+                <div class="bg-white p-8 rounded-lg shadow-md feature-card text-center">
+                    <div class="text-5xl font-bold copper-text mb-4">📈</div>
+                    <h3 class="text-xl font-bold mb-3">Escala</h3>
+                    <p class="text-gray-600">Investimos mais nos anúncios validados, aumentando o fluxo de clientes qualificados.</p>
+                </div>
+                <div class="bg-white p-8 rounded-lg shadow-md feature-card text-center">
+                    <div class="text-5xl font-bold copper-text mb-4">💰</div>
+                    <h3 class="text-xl font-bold mb-3">Extração</h3>
+                    <p class="text-gray-600">Repetimos o processo com foco na base de clientes conquistados, maximizando o valor por cliente.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Investimento -->
+    <section id="investimento" class="py-12 bg-white">
+        <div class="container mx-auto px-6">
+            <div class="flex flex-col md:flex-row items-center">
+                <div class="md:w-1/2 mb-12 md:mb-0">
+                    <h2 class="text-3xl md:text-4xl font-bold mb-8">Para fazer isso sozinho, você precisaria de:</h2>
+                    <div class="bg-gray-50 p-6 rounded-lg mb-8">
+                        <ul class="space-y-4">
+                            <li class="flex justify-between border-b pb-2">
+                                <span class="font-medium">Vendedor</span>
+                                <span class="font-bold">R$ 1.500/mês</span>
+                            </li>
+                            <li class="flex justify-between border-b pb-2">
+                                <span class="font-medium">Copywriter</span>
+                                <span class="font-bold">R$ 2.500/mês</span>
+                            </li>
+                            <li class="flex justify-between border-b pb-2">
+                                <span class="font-medium">Gestor de Tráfego</span>
+                                <span class="font-bold">R$ 2.000/mês</span>
+                            </li>
+                            <li class="flex justify-between border-b pb-2">
+                                <span class="font-medium">Designer</span>
+                                <span class="font-bold">R$ 1.500/mês</span>
+                            </li>
+                            <li class="flex justify-between border-b pb-2">
+                                <span class="font-medium">Web Designer</span>
+                                <span class="font-bold">R$ 1.500/mês</span>
+                            </li>
+                            <li class="flex justify-between border-b pb-2">
+                                <span class="font-medium">Audiovisual</span>
+                                <span class="font-bold">R$ 2.000/mês</span>
+                            </li>
+                            <li class="flex justify-between pt-4">
+                                <span class="font-bold text-lg">Total:</span>
+                                <span class="font-bold text-xl">R$ 11.000/mês</span>
+                            </li>
+                        </ul>
+                    </div>
+                    <p class="text-gray-600 italic">E ainda faltaria alguém para integrar todas essas áreas com foco em resultado.</p>
+                </div>
+                <div class="md:w-1/2 md:pl-12">
+                    <div class="bg-copper-500 text-white p-8 rounded-lg shadow-xl">
+                        <h3 class="text-2xl font-bold mb-4">Nós entregamos tudo isso integrado:</h3>
+                        <img src="https://images.unsplash.com/photo-1586023492125-27b2c045efd7?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80 " alt="Time de Marketing" class="rounded-lg shadow-md mb-6 w-full object-cover">
+                        <ul class="space-y-4 mb-6">
+                            <li class="flex items-start">
+                                <i class="fas fa-check-circle mt-1 mr-3"></i>
+                                <span>Estratégia validada</span>
+                            </li>
+                            <li class="flex items-start">
+                                <i class="fas fa-check-circle mt-1 mr-3"></i>
+                                <span>Equipe multidisciplinar</span>
+                            </li>
+                            <li class="flex items-start">
+                                <i class="fas fa-check-circle mt-1 mr-3"></i>
+                                <span>Foco total em resultado</span>
+                            </li>
+                            <li class="flex items-start">
+                                <i class="fas fa-check-circle mt-1 mr-3"></i>
+                                <span>Processos otimizados</span>
+                            </li>
+                        </ul>
+                        <p class="text-xl font-bold mb-6">Por um valor muito mais acessível e com garantia de performance.</p>
+                        <a href="https://wa.me/5521987829238?text=Quero%20escalar%20meu%20escrit ório%20de%20arquitetura" class="inline-block px-6 py-3 bg-white text-copper-500 font-bold rounded-md hover:bg-gray-100 transition">
+                            Quero saber o investimento
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Final CTA -->
+    <section id="cta" class="py-12 bg-gray-900 text-white">
+        <div class="container mx-auto px-6 text-center">
+            <h2 class="text-3xl md:text-4xl font-bold mb-6">O seu escritório de arquitetura pode crescer de forma previsível</h2>
+            <p class="text-xl mb-8 max-w-2xl mx-auto">Com a Performance IDM, você tem um processo claro, objetivo e focado em uma coisa: <span class="copper-text font-bold">resultado.</span></p>
+            <a href="https://wa.me/5521987829238?text=Quero%20escalar%20meu%20escrit ório%20de%20arquitetura" class="inline-block px-8 py-4 bg-orange-500 text-white text-lg font-semibold rounded-md hover:bg-orange-600 transition duration-300 transform hover:scale-105 shadow-md">
+    Quero escalar meu escritório
+</a>
+            </a>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-800 text-white py-12">
+        <div class="container mx-auto px-6">
+            <div class="flex flex-col md:flex-row justify-between">
+                <div class="mb-8 md:mb-0">
+                    <div class="text-2xl font-bold copper-text mb-4">PERFORMANCE IDM</div>
+                    <p class="max-w-xs">Implementação de fluxos de vendas online para arquitetos que querem crescer.</p>
+                </div>
+                <div class="grid grid-cols-2 md:grid-cols-3 gap-8">
+                    <div>
+                        <h4 class="text-lg font-bold mb-4">Links</h4>
+                        <ul class="space-y-2">
+                            <li><a href="#problema" class="hover:text-copper-300 transition">O Problema</a></li>
+                            <li><a href="#solucao" class="hover:text-copper-300 transition">Nossa Solução</a></li>
+                            <li><a href="#metodo" class="hover:text-copper-300 transition">Nosso Método</a></li>
+                            <li><a href="#investimento" class="hover:text-copper-300 transition">Investimento</a></li>
+                        </ul>
+                    </div>
+                    <div>
+                        <h4 class="text-lg font-bold mb-4">Contato</h4>
+                        <ul class="space-y-2">
+                            <li><a href="mailto:contato@performanceidm.com" class="hover:text-copper-300 transition">performanceidmgabriel@gmail.com</a></li>
+                            <li><a href="tel:+5521987829238" class="hover:text-copper-300 transition">(21) 98782-9238</a></li>
+                        </ul>
+                    </div>
+                    
+                    </div>
+                </div>
+            </div>
+            <div class="border-t border-gray-700 mt-12 pt-8 text-center text-gray-400">
+                <p>© 2023 Performance IDM. Todos os direitos reservados.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- WhatsApp Float Button -->
+    <a href="https://wa.me/5521987829238?text=Quero%20escalar%20meu%20escritório%20de%20arquitetura" class="fixed bottom-6 right-6 w-16 h-16 bg-green-500 rounded-full flex items-center justify-center shadow-xl hover:bg-green-600 transition z-50">
+        <i class="fab fa-whatsapp text-white text-2xl"></i>
+    </a>
+
+    <!-- Scripts -->
+    <script>
+        // Mobile menu toggle
+        const mobileMenuButton = document.querySelector('.mobile-menu-button');
+        const mobileMenu = document.querySelector('.mobile-menu');
+        mobileMenuButton.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+        });
+
+        // Smooth scroll for anchor links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+    anchor.addEventListener('click', function (e) {
+        const targetId = this.getAttribute('href');
+        if (targetId === '#' || targetId.startsWith('http')) return;
+
+        e.preventDefault();
+
+        const targetElement = document.querySelector(targetId);
+        if (targetElement) {
+            const headerHeight = document.querySelector('nav').offsetHeight;
+            const targetPosition = targetElement.offsetTop - headerHeight;
+            window.scrollTo({
+                top: targetPosition,
+                behavior: 'smooth'
+            });
+            mobileMenu.classList.add('hidden');
+        }
+    });
+});
+
+        // Add shadow to navbar on scroll
+        window.addEventListener('scroll', function() {
+            const nav = document.querySelector('nav');
+            if (window.scrollY > 50) {
+                nav.classList.add('shadow-lg');
+            } else {
+                nav.classList.remove('shadow-lg');
+            }
+        });
+    </script>
+</body>
+</html>
